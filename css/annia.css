@@ -344,6 +344,10 @@ textarea {
     font-size: 1.5rem;
 }
 
+.breadcrumb {
+    justify-content: center;
+}
+
 
 /* -----------media query tablet (medidas no exactas)------------- */
 @media screen and (max-width:700px) {
