@@ -417,14 +417,10 @@ textarea {
     text-decoration-color: black;
 }
 
-/* -----------media query tablet (medidas no exactas)------------- */
-@media screen and (max-width:700px) {
-    .iframemaps {
-        width: 200px;
-    }
-}
 
-@media screen and (max-width:1000px) {
+
+
+@media screen and (max-width:992px) {
     /* header {
         flex-direction: column;
         
@@ -436,7 +432,7 @@ textarea {
     } */
     
     .iframemaps {
-        width: 150px;
+        width: 100%;
     }
     .contenedorhijo_flex{ 
         flex-direction: column;
@@ -465,6 +461,7 @@ textarea {
         grid-column: 7/13;
     }
     
+    
 
     
     .gridcontacto {
@@ -486,7 +483,7 @@ textarea {
     
 }
 /* -----------media query mobile (medidas no exactas)------------- */
-@media screen and (max-width:530px) {
+@media screen and (max-width:576px) {
     header {
         flex-direction: column;
     }
@@ -578,5 +575,18 @@ textarea {
     "cammen"
     "cammen"
     "enviar";   
+    }
+    .gridfooter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    .redes {
+        display: flex;
+        flex-direction: row;
+    }
+    .logofooter{
+        width: 320px;
     }
 }
