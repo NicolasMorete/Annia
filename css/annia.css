@@ -417,6 +417,9 @@ textarea {
     text-decoration-color: black;
 }
 
+.form-check-input:checked {
+    background-color: black;
+}
 
 
 
@@ -588,5 +591,11 @@ textarea {
     }
     .logofooter{
         width: 320px;
+    }
+    .offcanvas-start.show {
+        width: 250px;
+    }
+    .offcanvas-title {
+        width: 100%;
     }
 }
