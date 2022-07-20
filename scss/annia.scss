@@ -16,34 +16,23 @@ body {
 .bg-light {
     --bs-bg-opacity: 1;
     background-color: rgb(250, 246, 237),var(--bs-bg-opacity)!important;}
-
+ 
 header {
     display: flex;
     justify-content:center;
+}
+
+.nav-link:hover {
+    font-size: 18px;
+}
+.dropdown-item:hover {
+    font-size: 18px;
 }
 
 .dropdown-menu {
     background-color:rgb(250, 246, 237) ;
 }
 
-/* .menu {
-    display: flex;
-    flex-direction: row;
-    max-width: 650px;
-} */
-
-/* .logoprincipal {
-    width: 300px;
-    height: 200px;
-} */
-
-/* .menunav {
-    text-decoration: none;
-    text-decoration-line: none;
-    padding-right: 25px;
-    color: black;
-    text-transform: uppercase;
-} */
 .contenedormayor{
     margin: auto;
     margin-top: 20px;
@@ -160,16 +149,6 @@ li a {
 }
 
 
-/* ----------HEADER, INDEX AND FOOTER----------- */
-
-
-
-/* -----------MAIN DE LENCERÍA----------- */
-/* "color color foto1 foto1 foto2 foto2 foto3 foto3"
-    "talle talle foto1 foto1 foto2 foto2 foto3 foto3"
-    "talle talle foto4 foto4 foto5 foto5 foto6 foto6"
-    "conoce conoce foto4 foto4 foto5 foto5 foto6 foto6" */
-
 .maingrid {
     display: grid;
     grid-template-columns:200px, 5fr;
@@ -229,11 +208,6 @@ li a {
     grid-template-columns:repeat(12 , 1fr);
     gap: 30px;
     grid-template-rows:repeat(2 , 1fr);
-    /* grid-template-areas:
-    "foto1 foto1 foto2 foto2 foto3 foto3"
-    "foto1 foto1 foto2 foto2 foto3 foto3"
-    "foto4 foto4 foto5 foto5 foto6 foto6"
-    "foto4 foto4 foto5 foto5 foto6 foto6"; */
 }
 
 .imglenc:nth-of-type(1) {
@@ -424,16 +398,7 @@ textarea {
 
 
 @media (min-width: 577px) and (max-width:991px) {
-    /* header {
-        flex-direction: column;
-        
-    }
-    .menu {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    } */
-    
+
     .iframemaps {
         width: 100%;
     }
