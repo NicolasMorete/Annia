@@ -6,51 +6,174 @@
 body {
   background-color: #faf6ed;
   width: 100%; }
-
-.container-fluid {
-  background-color: #faf6ed; }
-
-.bg-light {
-  --bs-bg-opacity: 1;
-  background-color: #faf6ed, var(--bs-bg-opacity) !important; }
-
-header {
-  display: flex;
-  justify-content: center; }
-
-.nav-link:hover {
-  font-size: 18px; }
-
-.dropdown-item:hover {
-  font-size: 18px; }
-
-.dropdown-menu {
-  background-color: #faf6ed; }
-
-.contenedormayor {
-  margin: auto;
-  margin-top: 20px;
-  width: 100%; }
-
-.contenedorpadre_flex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px; }
-
-.fototodas {
-  width: 100%; }
-
-.alta {
-  width: 100%; }
-
-.contenedorhijo_flex {
-  display: flex;
-  margin: auto;
-  gap: 10px; }
-
-footer {
-  width: 100%; }
+  body header {
+    display: flex;
+    justify-content: center; }
+    body header .bg-light {
+      --bs-bg-opacity: 1;
+      background-color: #faf6ed, var(--bs-bg-opacity) !important; }
+    body header .navbar {
+      width: 100%; }
+    body header .container-fluid {
+      background-color: #faf6ed; }
+    body header .navbar-collapse {
+      justify-content: space-around; }
+      body header .navbar-collapse .nav-link:hover {
+        font-size: 18px; }
+      body header .navbar-collapse .dropdown-menu {
+        background-color: #faf6ed; }
+        body header .navbar-collapse .dropdown-menu .dropdown-item:hover {
+          font-size: 18px; }
+      body header .navbar-collapse .btn {
+        border-color: black;
+        color: black;
+        width: auto;
+        height: 40px;
+        background-color: transparent; }
+        body header .navbar-collapse .btn-primary {
+          --bs-btn-bg: black;
+          --bs-btn-hover-bg: black;
+          --bs-btn-border-color: black;
+          --bs-btn-hover-border-color: black;
+          --bs-btn-active-bg: black; }
+        body header .navbar-collapse .btn-outline-success {
+          --bs-btn-hover-bg: transparent;
+          --bs-btn-hover-border-color: black;
+          --bs-btn-hover-color: black;
+          --bs-btn-active-bg: none; }
+  body .breadcrumb {
+    justify-content: center; }
+    body .breadcrumb li a {
+      text-decoration: none;
+      color: black; }
+  body .contenedormayor {
+    margin: auto;
+    margin-top: 20px;
+    width: 100%; }
+  body .offcanvas-title {
+    width: 300px; }
+  body .offcanvas .form-control {
+    background-color: transparent; }
+  body .offcanvas .form-check-input:checked {
+    background-color: black; }
+  body .offcanvas .btn {
+    border-color: black;
+    color: black;
+    width: auto;
+    height: 40px;
+    background-color: transparent; }
+    body .offcanvas .btn-primary {
+      --bs-btn-bg: black;
+      --bs-btn-hover-bg: black;
+      --bs-btn-border-color: black;
+      --bs-btn-hover-border-color: black;
+      --bs-btn-active-bg: black; }
+    body .offcanvas .btn-outline-success {
+      --bs-btn-hover-bg: transparent;
+      --bs-btn-hover-border-color: black;
+      --bs-btn-hover-color: black;
+      --bs-btn-active-bg: none; }
+  body .offcanvas .offcanvasolv {
+    padding-top: 15px; }
+  body .offcanvas .letrasnegras {
+    color: black;
+    text-decoration-color: black; }
+  body .pagination .page-link {
+    color: black;
+    background-color: transparent; }
+  body .maingrid {
+    display: grid;
+    grid-template-columns: 200px, 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "menus fotos" "menus fotos"; }
+    body .maingrid .menues {
+      grid-area: menus;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 200px;
+      gap: 20px;
+      align-items: center;
+      text-align: justify; }
+      body .maingrid .menues .menucolores .variantecolores .colores {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 25px;
+        padding-top: 20px;
+        gap: 8px; }
+      body .maingrid .menues .menutalles .variantetalles .talles {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 25px;
+        padding-top: 20px;
+        gap: 8px; }
+      body .maingrid .menues .ideallink {
+        font-size: 1.3rem;
+        align-items: center; }
+        body .maingrid .menues .ideallink a {
+          text-decoration: none;
+          color: black; }
+    body .maingrid .imageneslenceria {
+      grid-area: fotos;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 30px;
+      grid-template-rows: repeat(2, 1fr); }
+      body .maingrid .imageneslenceria .imglenc {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%; }
+  body .btn-outline-warning {
+    background-color: transparent;
+    --bs-btn-hover-bg:transparent;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-color: gray ;
+    --bs-btn-border-color: black ;
+    --bs-btn-active-bg: transparent ;
+    --bs-btn-focus-shadow-rgb:black ;
+    --bs-btn-active-border-color: black ; }
+  body .subti {
+    font-size: 1.5rem; }
+  body .gridcontacto {
+    border: none;
+    display: grid;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 50px);
+    grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
+    body .gridcontacto input {
+      background-color: transparent; }
+    body .gridcontacto select {
+      background-color: transparent; }
+    body .gridcontacto textarea {
+      background-color: transparent; }
+    body .gridcontacto .nombre {
+      grid-area: nombre; }
+    body .gridcontacto .ingnombre {
+      grid-area: camnom; }
+    body .gridcontacto .apellido {
+      grid-area: apelli; }
+    body .gridcontacto .ingapellido {
+      grid-area: camape; }
+    body .gridcontacto .correo {
+      grid-area: correo; }
+    body .gridcontacto .ingcorreo {
+      grid-area: camcor; }
+    body .gridcontacto .consu {
+      grid-area: asunto; }
+    body .gridcontacto .ingconsu {
+      grid-area: camasu; }
+    body .gridcontacto .mensaje {
+      grid-area: mensaje; }
+    body .gridcontacto .ingmensaje {
+      grid-area: cammen; }
+    body .gridcontacto .enviar {
+      width: 50px;
+      grid-area: enviar; }
 
 .gridfooter {
   width: 100%;
@@ -59,114 +182,53 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "logo    logo    logo" "iframe  redes   info"; }
-
-.gridhijo2 {
-  grid-area: iframe;
-  text-align: center; }
-
-.gridhijo1 {
-  width: 100%;
-  grid-area: logo;
-  align-items: center;
-  text-align: center; }
-
-.gridhijo3 {
-  width: 100%;
-  grid-area: redes;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: space-evenly; }
-
-.gridhijo4 {
-  width: 100%;
-  grid-area: info;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-.gridhijo4 p {
-  font-size: large;
-  font-family: sans-serif;
-  font-style: italic;
-  padding-bottom: 1rem;
-  color: black; }
-
-.redes {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-evenly; }
-
-.gridhijo4 li {
-  list-style: none; }
-
-.imgredes {
-  width: 35px; }
-
-.footerletra {
-  font-size: 1.5rem; }
-
-ul {
-  list-style: none; }
-
-li a {
-  text-decoration: none;
-  color: black; }
-
-.maingrid {
-  display: grid;
-  grid-template-columns: 200px, 5fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "menus fotos" "menus fotos"; }
-
-.menues {
-  grid-area: menus;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 200px;
-  gap: 20px;
-  align-items: center;
-  text-align: justify; }
-
-.colores {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 25px;
-  padding-top: 20px;
-  gap: 8px; }
-
-.talles {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 25px;
-  padding-top: 20px;
-  gap: 8px; }
-
-.ideallink {
-  font-size: 1.3rem;
-  align-items: center; }
-
-.ideallink a {
-  text-decoration: none;
-  color: black; }
-
-.imglenc {
-  width: 450px;
-  max-width: 100%;
-  max-height: 100%; }
-
-.imageneslenceria {
-  grid-area: fotos;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 30px;
-  grid-template-rows: repeat(2, 1fr); }
+  .gridfooter .gridhijo1 {
+    width: 100%;
+    grid-area: logo;
+    align-items: center;
+    text-align: center; }
+    .gridfooter .gridhijo1 .logofooter {
+      width: 320px; }
+  .gridfooter .gridhijo2 {
+    grid-area: iframe;
+    text-align: center; }
+    .gridfooter .gridhijo2 .iframemaps {
+      width: 100%; }
+  .gridfooter .gridhijo3 {
+    width: 100%;
+    grid-area: redes;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly; }
+    .gridfooter .gridhijo3 .footerletra {
+      font-size: 1.5rem; }
+    .gridfooter .gridhijo3 .redes {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-evenly; }
+      .gridfooter .gridhijo3 .redes .imgredes {
+        width: 35px; }
+  .gridfooter .gridhijo4 {
+    width: 100%;
+    grid-area: info;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .gridfooter .gridhijo4 li {
+      list-style: none; }
+    .gridfooter .gridhijo4 p {
+      font-size: large;
+      font-family: sans-serif;
+      font-style: italic;
+      padding-bottom: 1rem;
+      color: black; }
+    .gridfooter .gridhijo4 a {
+      text-decoration: none; }
 
 .imglenc:nth-of-type(1) {
   grid-column: 1/5; }
@@ -186,203 +248,82 @@ li a {
 .imglenc:nth-of-type(6) {
   grid-column: 9/13; }
 
-/* -----------CONTACTO------------ */
-.gridcontacto {
-  display: grid;
-  gap: 20px;
-  justify-content: space-evenly;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 50px);
-  grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
-
-fieldset {
-  border: none; }
-
-.nombre {
-  grid-area: nombre; }
-
-.ingnombre {
-  grid-area: camnom; }
-
-.apellido {
-  grid-area: apelli; }
-
-.ingapellido {
-  grid-area: camape; }
-
-.correo {
-  grid-area: correo; }
-
-.ingcorreo {
-  grid-area: camcor; }
-
-.consu {
-  grid-area: asunto; }
-
-.ingconsu {
-  grid-area: camasu; }
-
-.mensaje {
-  grid-area: mensaje; }
-
-.ingmensaje {
-  grid-area: cammen; }
-
-.enviar {
-  width: 50px;
-  grid-area: enviar; }
-
-input {
-  background-color: transparent; }
-
-select {
-  background-color: transparent; }
-
-textarea {
-  background-color: transparent; }
-
-.subti {
-  font-size: 1.5rem; }
-
-.breadcrumb {
-  justify-content: center; }
-
-.navbar {
-  width: 100%; }
-
-.navbar-collapse {
-  justify-content: space-around; }
-
-.btn {
-  border-color: black;
-  color: black;
-  width: auto;
-  height: 40px;
-  background-color: transparent; }
-
-.form-control {
-  background-color: transparent; }
-
-.btn-outline-success {
-  --bs-btn-hover-bg: transparent;
-  --bs-btn-hover-border-color: black;
-  --bs-btn-hover-color: black;
-  --bs-btn-active-bg: none; }
-
-.imginiciarsesion {
-  width: 35px; }
-
-.btn-outline-warning {
-  background-color: transparent;
-  --bs-btn-hover-bg:transparent;
-  --bs-btn-hover-border-color: black;
-  --bs-btn-color: gray ; }
-
-.page-link {
-  color: black;
-  background-color: transparent; }
-
-.offcanvas-title {
-  width: 300px; }
-
-.btn-primary {
-  --bs-btn-hover-bg: black;
-  --bs-btn-border-color: black;
-  --bs-btn-hover-border-color: black;
-  --bs-btn-active-bg: black; }
-
-.offcanvasolv {
-  padding-top: 15px; }
-
-.letrasnegras {
-  color: black;
-  text-decoration-color: black; }
-
-.form-check-input:checked {
-  background-color: black; }
-
 @media (min-width: 577px) and (max-width: 991px) {
-  .iframemaps {
-    width: 100%; }
-  .contenedorhijo_flex {
-    flex-direction: column; }
-  .imglenc:nth-of-type(1) {
-    grid-column: 1/7; }
-  .imglenc:nth-of-type(2) {
-    grid-column: 7/13; }
-  .imglenc:nth-of-type(3) {
-    grid-column: 1/7; }
-  .imglenc:nth-of-type(4) {
-    grid-column: 7/13; }
-  .imglenc:nth-of-type(5) {
-    grid-column: 1/7; }
-  .imglenc:nth-of-type(6) {
-    grid-column: 7/13; }
-  .gridcontacto {
+  body .imageneslenceria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    body .imageneslenceria .imglenc:nth-of-type(1) {
+      grid-column: 1/7; }
+    body .imageneslenceria .imglenc:nth-of-type(2) {
+      grid-column: 7/13; }
+    body .imageneslenceria .imglenc:nth-of-type(3) {
+      grid-column: 1/7; }
+    body .imageneslenceria .imglenc:nth-of-type(4) {
+      grid-column: 7/13; }
+    body .imageneslenceria .imglenc:nth-of-type(5) {
+      grid-column: 1/7; }
+    body .imageneslenceria .imglenc:nth-of-type(6) {
+      grid-column: 7/13; }
+  body .gridcontacto {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "nombre" "camnom" "apelli" "camape" "correo" "camcor" "asunto" "camasu" "mensaje" "cammen" "cammen" "enviar"; } }
 
-/* -----------media query mobile (medidas no exactas)------------- */
 @media (min-width: 320px) and (max-width: 576px) {
-  header {
+  body header {
     flex-direction: column; }
-  .menu {
-    flex-direction: column; }
-  .variantecolores {
-    font-size: medium; }
-  .colores {
-    font-size: small; }
-  .variantetalles {
-    font-size: medium; }
-  .talles {
-    font-size: small; }
-  .iframemaps {
-    width: 175px;
-    height: 250px; }
-  .contenedorhijo_flex {
-    flex-direction: column; }
-  .imageneslenceria {
-    grid-template-columns: repeat(8, 1fr);
-    gap: 30px;
-    grid-template-rows: repeat(1fr); }
-  .imglenc:nth-of-type(1) {
-    grid-column: 1/9; }
-  .imglenc:nth-of-type(2) {
-    grid-column: 1/9; }
-  .imglenc:nth-of-type(3) {
-    grid-column: 1/9; }
-  .imglenc:nth-of-type(4) {
-    grid-column: 1/9; }
-  .imglenc:nth-of-type(5) {
-    grid-column: 1/9; }
-  .imglenc:nth-of-type(6) {
-    grid-column: 1/9; }
-  .menues {
-    align-items: flex-start;
-    width: 110px; }
-  .ideallink {
-    width: 70px; }
-  .maingrid {
+  body .maingrid {
     width: 100%; }
-  .maingrid img {
-    width: 250px; }
-  .redes {
-    flex-direction: column; }
-  .gridcontacto {
+    body .maingrid .menues {
+      align-items: flex-start;
+      width: 110px; }
+      body .maingrid .menues .menucolores .variantecolores {
+        font-size: medium; }
+        body .maingrid .menues .menucolores .variantecolores .colores {
+          font-size: small; }
+      body .maingrid .menues .menutalles .variantetalles {
+        font-size: medium; }
+        body .maingrid .menues .menutalles .variantetalles .talles {
+          font-size: small; }
+      body .maingrid .menues .ideallink {
+        width: 70px; }
+    body .maingrid .imageneslenceria {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr; }
+      body .maingrid .imageneslenceria .imglenc {
+        width: 250px; }
+      body .maingrid .imageneslenceria .imglenc:nth-of-type(1) {
+        grid-column: 1/7; }
+      body .maingrid .imageneslenceria .imglenc:nth-of-type(2) {
+        grid-column: 1/7; }
+      body .maingrid .imageneslenceria .imglenc:nth-of-type(3) {
+        grid-column: 1/7; }
+      body .maingrid .imageneslenceria .imglenc:nth-of-type(4) {
+        grid-column: 1/7; }
+      body .maingrid .imageneslenceria .imglenc:nth-of-type(5) {
+        grid-column: 1/7; }
+      body .maingrid .imageneslenceria .imglenc:nth-of-type(6) {
+        grid-column: 1/7; }
+  body .gridcontacto {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "nombre" "camnom" "apelli" "camape" "correo" "camcor" "asunto" "camasu" "mensaje" "cammen" "cammen" "enviar"; }
+  body .offcanvas-header .offcanvas-title {
+    width: 100%; }
+  body .offcanvas-start.show {
+    width: 250px; }
   .gridfooter {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 25px; }
-  .redes {
-    display: flex;
-    flex-direction: row; }
-  .logofooter {
-    width: 320px; }
-  .offcanvas-start.show {
-    width: 250px; }
-  .offcanvas-title {
-    width: 100%; } }
+    .gridfooter .gridhijo1 .logofooter {
+      width: 310px; }
+    .gridfooter .gridhijo2 .iframemaps {
+      width: 175px;
+      height: 250px; }
+    .gridfooter .gridhijo3 .redes {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; } }
