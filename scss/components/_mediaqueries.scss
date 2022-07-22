@@ -1,0 +1,158 @@
+@media (min-width: 577px) and (max-width:991px) {
+    body {
+        .maingrid {
+            .imageneslenceria{
+                grid-template-rows:repeat(3, 1fr);
+                width: 100%;
+                .imglenc {
+                    &:nth-of-type(1) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(2) {
+                        grid-column: 7/13;
+                    }
+                    &:nth-of-type(3) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(5) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(4) {
+                        grid-column: 7/13;
+                    }
+                    &:nth-of-type(6) {
+                        grid-column: 7/13;
+                    }
+                }
+            }
+        }
+        .gridcontacto {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+             "nombre"
+             "camnom"
+             "apelli"
+             "camape"
+             "correo"
+             "camcor"
+             "asunto"
+             "camasu"
+             "mensaje"
+             "cammen"
+             "cammen"
+             "enviar";
+        }
+    }    
+}
+@media (min-width: 320px) and (max-width:576px) {
+    body {
+        header {
+            flex-direction: column;
+        }
+        .maingrid {
+            width: 100%;
+            .menues {
+                align-items: flex-start;
+                width: 110px;  
+                .menucolores {
+                    .variantecolores{
+                        font-size: medium;
+                        .colores {
+                            font-size: small;
+                        }
+                    }
+                } 
+                .menutalles {
+                    .variantetalles {
+                        font-size: medium;
+                        .talles {
+                            font-size: small;
+                        }
+                    }
+                }
+                .ideallink {
+                    width: 70px;
+                    font-size: $tamano-mediano;
+                }
+            }
+            .imageneslenceria {
+                grid-template-columns:repeat(6 , 1fr);
+                grid-template-rows:1fr ;
+                .imglenc {
+                    width: 250px;
+                    &:nth-of-type(1) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(2) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(3) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(4) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(5) {
+                        grid-column: 1/7;
+                    }
+                    &:nth-of-type(6) {
+                        grid-column: 1/7;
+                    }
+                }
+        }
+    }
+    .gridcontacto {
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(6, 1fr);
+        grid-template-areas:
+        "nombre"
+        "camnom"
+        "apelli"
+        "camape"
+        "correo"
+        "camcor"
+        "asunto"
+        "camasu"
+        "mensaje"
+        "cammen"
+        "cammen"
+        "enviar"; 
+    }
+    .offcanvas {
+        &-header {
+            .offcanvas-title {
+                width: 100%;
+            }
+        }
+    }
+    .offcanvas-start.show {
+        width: 250px;
+    }
+    }
+    .gridfooter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        .gridhijo1 {
+            .logofooter{
+                width: 310px;
+            }
+        }
+        .gridhijo2 {
+            .iframemaps {
+                width: 175px;
+                height: 250px;
+            }
+        }
+        .gridhijo3 {
+            .redes {
+                display: flex;
+                flex-direction: column;
+                gap:2rem ;
+            }
+        }
+    } 
+}
