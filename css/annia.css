@@ -5,184 +5,198 @@
 body {
   background-color: #faf6ed;
   width: 100%; }
-  body header {
-    display: flex;
-    justify-content: center; }
-    body header .bg-light {
-      --bs-bg-opacity: 1;
-      background-color: #faf6ed, var(--bs-bg-opacity) !important; }
-    body header .navbar {
-      width: 100%; }
-    body header .container-fluid {
-      background-color: #faf6ed; }
-    body header .navbar-collapse {
-      justify-content: space-around; }
-      body header .navbar-collapse .nav-link:hover {
-        font-size: 18px; }
-      body header .navbar-collapse .dropdown-menu {
-        background-color: #faf6ed; }
-        body header .navbar-collapse .dropdown-menu .dropdown-item:hover {
-          font-size: 18px; }
-      body header .navbar-collapse .btn {
-        border-color: black;
-        color: #000;
-        width: auto;
-        height: 40px;
-        background-color: transparent; }
-        body header .navbar-collapse .btn-primary {
-          --bs-btn-bg: $color-negro;
-          --bs-btn-hover-bg: $color-negro;
-          --bs-btn-border-color: black;
-          --bs-btn-hover-border-color:black;
-          --bs-btn-active-bg: $color-negro; }
-        body header .navbar-collapse .btn-outline-success {
-          --bs-btn-hover-bg: $fondo-transparente;
-          --bs-btn-hover-border-color: black;
-          --bs-btn-hover-color: $color-negro;
-          --bs-btn-active-bg: none; }
-  body .breadcrumb {
-    justify-content: center; }
-    body .breadcrumb li a {
-      text-decoration: none;
-      color: #000; }
-  body .contenedormayor {
-    margin: auto;
-    margin-top: 20px;
+
+header {
+  display: flex;
+  justify-content: center; }
+  header .bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #faf6ed, var(--bs-bg-opacity) !important; }
+  header .navbar {
     width: 100%; }
-  body .offcanvas-title {
-    width: 300px; }
-  body .offcanvas .form-control {
-    background-color: transparent; }
-  body .offcanvas .form-check-input:checked {
-    background-color: #000; }
-  body .offcanvas .btn {
-    border-color: black;
-    color: #000;
-    width: auto;
-    height: 40px;
-    background-color: transparent; }
-    body .offcanvas .btn-primary {
-      --bs-btn-bg: $color-negro;
-      --bs-btn-hover-bg: $color-negro;
-      --bs-btn-border-color: black;
-      --bs-btn-hover-border-color: black;
-      --bs-btn-active-bg: $color-negro; }
-    body .offcanvas .btn-outline-success {
-      --bs-btn-hover-bg: $fondo-transparente;
-      --bs-btn-hover-border-color: black;
-      --bs-btn-hover-color: $color-negro;
-      --bs-btn-active-bg: none; }
-  body .offcanvas .offcanvasolv {
-    padding-top: 15px; }
-  body .offcanvas .letrasnegras {
-    color: #000;
-    text-decoration-color: #000; }
-  body .pagination .page-link {
-    color: #000;
-    background-color: transparent; }
-  body .maingrid {
-    display: grid;
-    grid-template-columns: 200px, 5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "menus fotos" "menus fotos"; }
-    body .maingrid .menues {
-      grid-area: menus;
+  header .container-fluid {
+    background-color: #faf6ed; }
+  header .navbar-collapse {
+    justify-content: space-around; }
+    header .navbar-collapse .nav-link:hover {
+      font-size: 18px; }
+    header .navbar-collapse .dropdown-menu {
+      background-color: #faf6ed; }
+      header .navbar-collapse .dropdown-menu .dropdown-item:hover {
+        font-size: 18px; }
+    header .navbar-collapse .btn {
+      border-color: black;
+      color: #000;
+      width: auto;
+      height: 40px;
+      background-color: transparent; }
+      header .navbar-collapse .btn-primary {
+        --bs-btn-bg: $color-negro;
+        --bs-btn-hover-bg: $color-negro;
+        --bs-btn-border-color: black;
+        --bs-btn-hover-border-color:black;
+        --bs-btn-active-bg: $color-negro; }
+      header .navbar-collapse .btn-outline-success {
+        --bs-btn-hover-bg: $fondo-transparente;
+        --bs-btn-hover-border-color: black;
+        --bs-btn-hover-color: $color-negro;
+        --bs-btn-active-bg: none; }
+
+.breadcrumb {
+  justify-content: center; }
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #000; }
+
+.contenedormayor {
+  margin: auto;
+  margin-top: 20px;
+  width: 100%; }
+
+.offcanvas-title {
+  width: 300px; }
+
+.offcanvas .form-control {
+  background-color: transparent; }
+
+.offcanvas .form-check-input:checked {
+  background-color: #000; }
+
+.offcanvas .btn {
+  border-color: black;
+  color: #000;
+  width: auto;
+  height: 40px;
+  background-color: transparent; }
+  .offcanvas .btn-primary {
+    --bs-btn-bg: $color-negro;
+    --bs-btn-hover-bg: $color-negro;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-active-bg: $color-negro; }
+  .offcanvas .btn-outline-success {
+    --bs-btn-hover-bg: $fondo-transparente;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-hover-color: $color-negro;
+    --bs-btn-active-bg: none; }
+
+.offcanvas .offcanvasolv {
+  padding-top: 15px; }
+
+.offcanvas .letrasnegras {
+  color: #000;
+  text-decoration-color: #000; }
+
+.pagination .page-link {
+  color: #000;
+  background-color: transparent; }
+
+.maingrid {
+  display: grid;
+  grid-template-columns: 200px, 5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "menus fotos" "menus fotos"; }
+  .maingrid .menues {
+    grid-area: menus;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 200px;
+    gap: 20px;
+    align-items: center;
+    text-align: justify; }
+    .maingrid .menues .menucolores .variantecolores .colores {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      width: 200px;
-      gap: 20px;
-      align-items: center;
-      text-align: justify; }
-      body .maingrid .menues .menucolores .variantecolores .colores {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 25px;
-        padding-top: 20px;
-        gap: 8px; }
-      body .maingrid .menues .menutalles .variantetalles .talles {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 25px;
-        padding-top: 20px;
-        gap: 8px; }
-      body .maingrid .menues .ideallink {
-        font-size: 20px;
-        align-items: center; }
-        body .maingrid .menues .ideallink a {
-          text-decoration: none;
-          color: #000; }
-    body .maingrid .imageneslenceria {
-      grid-area: fotos;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 30px; }
-      body .maingrid .imageneslenceria .imglenc {
-        width: 100%; }
-        body .maingrid .imageneslenceria .imglenc:nth-of-type(1) {
-          grid-column: 1/5; }
-        body .maingrid .imageneslenceria .imglenc:nth-of-type(2) {
-          grid-column: 5/9; }
-        body .maingrid .imageneslenceria .imglenc:nth-of-type(3) {
-          grid-column: 9/13; }
-        body .maingrid .imageneslenceria .imglenc:nth-of-type(4) {
-          grid-column: 1/5; }
-        body .maingrid .imageneslenceria .imglenc:nth-of-type(5) {
-          grid-column: 5/9; }
-        body .maingrid .imageneslenceria .imglenc:nth-of-type(6) {
-          grid-column: 9/13; }
-  body .btn-outline-warning {
-    background-color: transparent;
-    --bs-btn-hover-bg:$fondo-transparente;
-    --bs-btn-hover-border-color: black;
-    --bs-btn-color: gray ;
-    --bs-btn-border-color: black ;
-    --bs-btn-active-bg: $fondo-transparente ;
-    --bs-btn-focus-shadow-rgb:$color-negro ;
-    --bs-btn-active-border-color: black; }
-  body .subti {
-    font-size: 1.5rem; }
-  body .gridcontacto {
-    border: none;
+      align-items: flex-start;
+      padding-left: 25px;
+      padding-top: 20px;
+      gap: 8px; }
+    .maingrid .menues .menutalles .variantetalles .talles {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 25px;
+      padding-top: 20px;
+      gap: 8px; }
+    .maingrid .menues .ideallink {
+      font-size: 20px;
+      align-items: center; }
+      .maingrid .menues .ideallink a {
+        text-decoration: none;
+        color: #000; }
+  .maingrid .imageneslenceria {
+    grid-area: fotos;
     display: grid;
-    gap: 20px;
-    justify-content: space-evenly;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 50px);
-    grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
-    body .gridcontacto input {
-      background-color: transparent; }
-    body .gridcontacto select {
-      background-color: transparent; }
-    body .gridcontacto textarea {
-      background-color: transparent; }
-    body .gridcontacto .nombre {
-      grid-area: nombre; }
-    body .gridcontacto .ingnombre {
-      grid-area: camnom; }
-    body .gridcontacto .apellido {
-      grid-area: apelli; }
-    body .gridcontacto .ingapellido {
-      grid-area: camape; }
-    body .gridcontacto .correo {
-      grid-area: correo; }
-    body .gridcontacto .ingcorreo {
-      grid-area: camcor; }
-    body .gridcontacto .consu {
-      grid-area: asunto; }
-    body .gridcontacto .ingconsu {
-      grid-area: camasu; }
-    body .gridcontacto .mensaje {
-      grid-area: mensaje; }
-    body .gridcontacto .ingmensaje {
-      grid-area: cammen; }
-    body .gridcontacto .enviar {
-      width: 50px;
-      grid-area: enviar; }
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px; }
+    .maingrid .imageneslenceria .imglenc {
+      width: 100%; }
+      .maingrid .imageneslenceria .imglenc:nth-of-type(1) {
+        grid-column: 1/5; }
+      .maingrid .imageneslenceria .imglenc:nth-of-type(2) {
+        grid-column: 5/9; }
+      .maingrid .imageneslenceria .imglenc:nth-of-type(3) {
+        grid-column: 9/13; }
+      .maingrid .imageneslenceria .imglenc:nth-of-type(4) {
+        grid-column: 1/5; }
+      .maingrid .imageneslenceria .imglenc:nth-of-type(5) {
+        grid-column: 5/9; }
+      .maingrid .imageneslenceria .imglenc:nth-of-type(6) {
+        grid-column: 9/13; }
+
+.subti {
+  font-size: 1.5rem; }
+
+.gridcontacto {
+  border: none;
+  display: grid;
+  gap: 20px;
+  justify-content: space-evenly;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 50px);
+  grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
+  .gridcontacto input {
+    background-color: transparent; }
+  .gridcontacto select {
+    background-color: transparent; }
+  .gridcontacto textarea {
+    background-color: transparent; }
+  .gridcontacto .nombre {
+    grid-area: nombre; }
+  .gridcontacto .ingnombre {
+    grid-area: camnom; }
+  .gridcontacto .apellido {
+    grid-area: apelli; }
+  .gridcontacto .ingapellido {
+    grid-area: camape; }
+  .gridcontacto .correo {
+    grid-area: correo; }
+  .gridcontacto .ingcorreo {
+    grid-area: camcor; }
+  .gridcontacto .consu {
+    grid-area: asunto; }
+  .gridcontacto .ingconsu {
+    grid-area: camasu; }
+  .gridcontacto .mensaje {
+    grid-area: mensaje; }
+  .gridcontacto .ingmensaje {
+    grid-area: cammen; }
+  .gridcontacto .enviar {
+    width: 50px;
+    grid-area: enviar; }
+
+.btn-outline-warning {
+  background-color: transparent;
+  --bs-btn-hover-bg:$fondo-transparente;
+  --bs-btn-hover-border-color: black;
+  --bs-btn-color: gray ;
+  --bs-btn-border-color: black ;
+  --bs-btn-active-bg: $fondo-transparente ;
+  --bs-btn-focus-shadow-rgb:$color-negro ;
+  --bs-btn-active-border-color: black; }
 
 .gridfooter {
   width: 100%;

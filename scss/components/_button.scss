@@ -1,0 +1,12 @@
+.btn {
+    &-outline-warning {
+        background-color: $fondo-transparente;
+        --bs-btn-hover-bg :$fondo-transparente;
+        --bs-btn-hover-border-color: black;
+        --bs-btn-color: gray ;
+        --bs-btn-border-color : black ;
+        --bs-btn-active-bg : $fondo-transparente ;
+        --bs-btn-focus-shadow-rgb :$color-negro ;
+        --bs-btn-active-border-color : black;
+    }
+}
