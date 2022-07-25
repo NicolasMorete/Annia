@@ -92,22 +92,26 @@ header {
   background-color: transparent; }
 
 .mainflex {
-  justify-content: center;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
   width: 100%; }
   .mainflex .menues {
-    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    text-align: justify;
+    width: 30%;
     width: 200px;
     gap: 20px;
-    align-items: center;
-    text-align: justify; }
+    align-items: center; }
     .mainflex .menues .menucolores .colores {
-      font-size: 15px;
       display: flex;
       flex-direction: column;
+      justify-content: none;
+      text-align: none;
+      font-size: 15px;
       align-items: flex-start;
       padding-left: 25px;
       padding-top: 20px;
@@ -115,9 +119,11 @@ header {
     .mainflex .menues .menucolores .variantecolores {
       font-size: 20px; }
     .mainflex .menues .menutalles .talles {
-      font-size: 15px;
       display: flex;
       flex-direction: column;
+      justify-content: none;
+      text-align: none;
+      font-size: 15px;
       align-items: flex-start;
       padding-left: 25px;
       padding-top: 20px;
@@ -141,6 +147,7 @@ header {
     .mainflex .imageneslenceria_grid {
       display: flex;
       flex-direction: column;
+      justify-content: none;
       text-align: center;
       width: 100%; }
       .mainflex .imageneslenceria_grid:nth-of-type(1) {
@@ -302,30 +309,33 @@ header {
     .gridfooter .gridhijo2 .iframemaps {
       width: 100%; }
   .gridfooter .gridhijo3 {
-    width: 100%;
-    grid-area: redes;
-    align-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     text-align: center;
-    justify-content: space-evenly; }
+    width: 100%;
+    grid-area: redes;
+    align-content: center; }
     .gridfooter .gridhijo3 .footerletra {
       font-size: 1.5rem; }
     .gridfooter .gridhijo3 .redes {
-      list-style: none;
       display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: center;
+      list-style: none;
       align-items: center;
-      width: 100%;
-      justify-content: space-evenly; }
+      width: 100%; }
       .gridfooter .gridhijo3 .redes .imgredes {
         width: 35px; }
   .gridfooter .gridhijo4 {
-    width: 100%;
-    grid-area: info;
-    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    grid-area: info;
+    flex-wrap: wrap; }
     .gridfooter .gridhijo4 li {
       list-style: none; }
     .gridfooter .gridhijo4 p {
@@ -375,7 +385,9 @@ header {
         grid-row: 3; }
   body .gridcontacto {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: none;
+    text-align: none; }
   .gridfooter .gridhijo3 .redes {
     flex-direction: column;
     gap: 10px; } }
@@ -407,14 +419,18 @@ header {
         font-size: 15px; }
     body .mainflex .imageneslenceria {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: none;
+      text-align: none; }
       body .mainflex .imageneslenceria .imglenc {
         width: 100%;
         padding-right: 10px;
         gap: 15px; }
   body .gridcontacto {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: none;
+    text-align: none; }
   body .offcanvas-header .offcanvas-title {
     width: 100%; }
   body .offcanvas-start.show {
@@ -423,6 +439,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: none;
     text-align: center;
     gap: 25px; }
     .gridfooter .gridhijo1 .logofooter {
@@ -433,4 +450,6 @@ header {
     .gridfooter .gridhijo3 .redes {
       display: flex;
       flex-direction: column;
+      justify-content: none;
+      text-align: none;
       gap: 2rem; } }

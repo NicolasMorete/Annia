@@ -1,21 +1,16 @@
 .mainflex {
-    justify-content: center;
-    display: flex;
+    @include flex (row, center, center);
     width: 100%;
     .menues {
+        @include flex (column, start, justify);
         width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
         width: 200px;
         gap: 20px;
         align-items: center;
-        text-align: justify;
         .menucolores {
             .colores {
+                @include flex (column, none, none);
                 font-size: $tamano-mediano;
-                display: flex;
-                flex-direction: column;
                 align-items: flex-start;
                 padding-left: 25px;
                 padding-top: 20px;
@@ -27,9 +22,8 @@
         }
         .menutalles {
             .talles {
+                @include flex (column, none, none);
                 font-size: $tamano-mediano;
-                display: flex;
-                flex-direction: column;
                 align-items: flex-start;
                 padding-left: 25px;
                 padding-top: 20px;
@@ -58,9 +52,7 @@
             width: 100%;
         }
         &_grid{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+            @include flex (column, none, center);
             width: 100%;
             &:nth-of-type(1) {
                 grid-column: 1/5;

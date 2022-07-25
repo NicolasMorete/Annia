@@ -60,8 +60,7 @@
             }
         }
         .gridcontacto {
-            display: flex;
-            flex-direction: column;
+            @include flex (column, none, none);
         }
     }
     .gridfooter {
@@ -109,8 +108,7 @@
                 }
             }
             .imageneslenceria {
-                display: flex;
-                flex-direction: column;
+                @include flex (column, none, none);
                 .imglenc {
                     width: 100%;
                     padding-right: 10px;
@@ -119,8 +117,7 @@
         }
     }
     .gridcontacto {
-        display: flex;
-        flex-direction: column; 
+        @include flex (column, none, none);
     }
     .offcanvas {
         &-header {
@@ -135,9 +132,7 @@
     }
     .gridfooter {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+        @include flex (column, none, center);
         gap: 25px;
         .gridhijo1 {
             .logofooter{
@@ -152,8 +147,7 @@
         }
         .gridhijo3 {
             .redes {
-                display: flex;
-                flex-direction: column;
+                @include flex (column, none, none);
                 gap:2rem ;
             }
         }
