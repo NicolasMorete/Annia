@@ -1,0 +1,94 @@
+.mainflex {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    .menues {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 200px;
+        gap: 20px;
+        align-items: center;
+        text-align: justify;
+        .menucolores {
+            .colores {
+                font-size: $tamano-mediano;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 25px;
+                padding-top: 20px;
+                gap: 8px;
+            }
+            .variantecolores {
+                font-size: $tamano-grande;
+            }
+        }
+        .menutalles {
+            .talles {
+                font-size: $tamano-mediano;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 25px;
+                padding-top: 20px;
+                gap: 8px;
+            }
+            .variantetalles {
+                font-size: $tamano-grande;
+            }
+        }
+        .ideallink {
+            font-size: $tamano-mediano;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: $color-negro;
+            }
+        }
+    }
+    .imageneslenceria {
+        width: 70%;
+        display: grid;
+        grid-template-columns:repeat(12 , 1fr);
+        grid-template-rows:1fr 1fr;
+        gap: 30px;
+        .imglenc{
+            width: 100%;
+        }
+        &_grid{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            &:nth-of-type(1) {
+                grid-column: 1/5;
+            }
+            &:nth-of-type(2) {
+                grid-column: 5/9;
+            }
+            &:nth-of-type(3) {
+                grid-column: 9/13;
+            }
+            &:nth-of-type(5) {
+                grid-column: 1/5;
+                grid-row: 2;
+            }
+            &:nth-of-type(4) {
+                grid-column: 5/9;
+                grid-row: 2;
+            }
+            &:nth-of-type(6) {
+                grid-column: 9/13;
+                grid-row: 2;
+            }
+            .titulos_productos {
+                font-size: $tamano-mediano;
+            }
+            .precio_productos {
+                font-size: 12px;
+            }
+        }
+    }
+}

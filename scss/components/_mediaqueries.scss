@@ -1,74 +1,106 @@
 @media (min-width: 577px) and (max-width:991px) {
     body {
-        .maingrid {
+        .mainflex {
+            .menues {
+                width: 25%;
+                .menucolores{
+                    .colores {
+                        p{
+                            font-size: $tamano-chico;
+                        }
+                    }
+                    .variantecolores{  
+                        font-size: $tamano-mediano;
+                    }
+                }
+                .menutalles{
+                    .talles {
+                        p{
+                            font-size: $tamano-chico;
+                        }
+                    }
+                }
+                    .variantetalles{
+                        font-size: $tamano-mediano; 
+                }
+            }
             .imageneslenceria{
+                justify-content: center;
+                grid-template-columns: repeat(12, 1fr);
                 grid-template-rows:repeat(3, 1fr);
                 width: 100%;
                 .imglenc {
+                    width: 100%;
+                }
+                &_grid {
+                    width: 100%;
                     &:nth-of-type(1) {
-                        grid-column: 1/7;
+                        grid-column: 2/7;
                     }
                     &:nth-of-type(2) {
-                        grid-column: 7/13;
+                        grid-column: 7/12;
                     }
                     &:nth-of-type(3) {
-                        grid-column: 1/7;
-                    }
-                    &:nth-of-type(5) {
-                        grid-column: 1/7;
+                        grid-column: 2/7;
+                        grid-row: 2;
                     }
                     &:nth-of-type(4) {
-                        grid-column: 7/13;
+                        grid-column: 7/12;
+                        grid-row: 2;
+                    }
+                    &:nth-of-type(5) {
+                        grid-column: 2/7;
+                        grid-row: 3;
                     }
                     &:nth-of-type(6) {
-                        grid-column: 7/13;
+                        grid-column: 7/12;
+                        grid-row: 3;
                     }
                 }
             }
         }
         .gridcontacto {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
-            grid-template-areas:
-             "nombre"
-             "camnom"
-             "apelli"
-             "camape"
-             "correo"
-             "camcor"
-             "asunto"
-             "camasu"
-             "mensaje"
-             "cammen"
-             "cammen"
-             "enviar";
+            display: flex;
+            flex-direction: column;
         }
-    }    
+    }
+    .gridfooter {
+        .gridhijo3 {
+            .redes {
+                flex-direction: column;
+                gap: $tamano-chico;
+            }
+        }
+    }   
 }
 @media (min-width: 320px) and (max-width:576px) {
     body {
         header {
             flex-direction: column;
         }
-        .maingrid {
+        .mainflex {
+            justify-content: flex-end;
+            text-align: start;
             width: 100%;
             .menues {
                 align-items: flex-start;
-                width: 110px;  
+                width: 33%;  
                 .menucolores {
+                    padding-left: 10px;
+                    .colores {
+                        font-size: $tamano-chico;
+                    }
                     .variantecolores{
-                        font-size: medium;
-                        .colores {
-                            font-size: small;
-                        }
+                        font-size: $tamano-mediano;
                     }
                 } 
                 .menutalles {
+                    padding-left: 10px;
+                    .talles {
+                        font-size: $tamano-chico;
+                    }
                     .variantetalles {
-                        font-size: medium;
-                        .talles {
-                            font-size: small;
-                        }
+                        font-size: $tamano-mediano;
                     }
                 }
                 .ideallink {
@@ -77,47 +109,18 @@
                 }
             }
             .imageneslenceria {
-                grid-template-columns:repeat(6 , 1fr);
-                grid-template-rows:1fr ;
+                display: flex;
+                flex-direction: column;
                 .imglenc {
-                    width: 250px;
-                    &:nth-of-type(1) {
-                        grid-column: 1/7;
-                    }
-                    &:nth-of-type(2) {
-                        grid-column: 1/7;
-                    }
-                    &:nth-of-type(3) {
-                        grid-column: 1/7;
-                    }
-                    &:nth-of-type(4) {
-                        grid-column: 1/7;
-                    }
-                    &:nth-of-type(5) {
-                        grid-column: 1/7;
-                    }
-                    &:nth-of-type(6) {
-                        grid-column: 1/7;
-                    }
+                    width: 100%;
+                    padding-right: 10px;
+                    gap: 15px;
                 }
         }
     }
     .gridcontacto {
-        grid-template-columns: 1fr;
-        grid-template-rows:repeat(6, 1fr);
-        grid-template-areas:
-        "nombre"
-        "camnom"
-        "apelli"
-        "camape"
-        "correo"
-        "camcor"
-        "asunto"
-        "camasu"
-        "mensaje"
-        "cammen"
-        "cammen"
-        "enviar"; 
+        display: flex;
+        flex-direction: column; 
     }
     .offcanvas {
         &-header {
