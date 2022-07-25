@@ -159,9 +159,76 @@ header {
         grid-column: 9/13;
         grid-row: 2; }
       .mainflex .imageneslenceria_grid .titulos_productos {
-        font-size: 15px; }
+        font-size: 15px;
+        cursor: pointer; }
       .mainflex .imageneslenceria_grid .precio_productos {
-        font-size: 12px; }
+        font-size: 12px;
+        cursor: pointer; }
+      .mainflex .imageneslenceria_grid .selec_color span {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 5px;
+        cursor: pointer;
+        background-size: contain;
+        position: relative;
+        transition: all 0.5s; }
+      .mainflex .imageneslenceria_grid .selec_color .color_negro {
+        background-color: black; }
+        .mainflex .imageneslenceria_grid .selec_color .color_negro:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_blanco {
+        background-color: white; }
+        .mainflex .imageneslenceria_grid .selec_color .color_blanco:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_rojo {
+        background-color: red; }
+        .mainflex .imageneslenceria_grid .selec_color .color_rojo:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_celeste {
+        background-color: skyblue; }
+        .mainflex .imageneslenceria_grid .selec_color .color_celeste:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_dorado {
+        background-color: darkgoldenrod; }
+        .mainflex .imageneslenceria_grid .selec_color .color_dorado:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_verde {
+        background-color: green; }
+        .mainflex .imageneslenceria_grid .selec_color .color_verde:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_bordo {
+        background-color: brown; }
+        .mainflex .imageneslenceria_grid .selec_color .color_bordo:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_violeta {
+        background-color: violet; }
+        .mainflex .imageneslenceria_grid .selec_color .color_violeta:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_rosa {
+        background-color: pink; }
+        .mainflex .imageneslenceria_grid .selec_color .color_rosa:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_azul {
+        background-color: blue; }
+        .mainflex .imageneslenceria_grid .selec_color .color_azul:hover {
+          width: 25px;
+          height: 25px; }
+      .mainflex .imageneslenceria_grid .selec_color .color_beige {
+        background-color: beige; }
+        .mainflex .imageneslenceria_grid .selec_color .color_beige:hover {
+          width: 25px;
+          height: 25px; }
 
 .subti {
   font-size: 1.5rem; }

@@ -85,9 +85,101 @@
             }
             .titulos_productos {
                 font-size: $tamano-mediano;
+                cursor: pointer;
             }
             .precio_productos {
                 font-size: 12px;
+                cursor: pointer;
+            }
+            .selec_color {
+                span {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    display: inline-block;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    background-size: contain;
+                    position: relative;
+                    transition: all 0.5s;
+                }
+                .color_negro {
+                    background-color: black;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_blanco {
+                    background-color: white;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_rojo {
+                    background-color: red;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_celeste {
+                    background-color: skyblue;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_dorado {
+                    background-color:darkgoldenrod;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_verde {
+                    background-color: green;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }   
+                .color_bordo {
+                    background-color: brown;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_violeta {
+                    background-color: violet;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_rosa {
+                    background-color: pink;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_azul {
+                    background-color: blue;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_beige {
+                    background-color: beige;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
             }
         }
     }
