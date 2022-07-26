@@ -6,6 +6,34 @@ body {
   background-color: #faf6ed;
   width: 100%; }
 
+.btn {
+  border-color: black;
+  color: #000;
+  width: auto;
+  height: 40px;
+  background-color: transparent; }
+  .btn-primary {
+    --bs-btn-bg: $color-negro;
+    --bs-btn-hover-bg: $color-negro;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-border-color:black;
+    --bs-btn-active-bg: $color-negro; }
+  .btn-outline-success {
+    --bs-btn-hover-bg: $fondo-transparente;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-hover-color: $color-negro;
+    --bs-btn-active-bg: none;
+    --bs-btn-active-color: $color-negro; }
+  .btn-outline-warning {
+    background-color: transparent;
+    --bs-btn-hover-bg:$fondo-transparente;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-color: gray ;
+    --bs-btn-border-color: black ;
+    --bs-btn-active-bg: $fondo-transparente ;
+    --bs-btn-focus-shadow-rgb:$color-negro ;
+    --bs-btn-active-border-color: black; }
+
 header {
   display: flex;
   justify-content: center; }
@@ -21,26 +49,11 @@ header {
     header .navbar-collapse .nav-link:hover {
       font-size: 18px; }
     header .navbar-collapse .dropdown-menu {
+      --bs-dropdown-link-active-bg:#transparent;
+      --bs-dropdown-link-active-color: $color-negro;
       background-color: #faf6ed; }
       header .navbar-collapse .dropdown-menu .dropdown-item:hover {
         font-size: 18px; }
-    header .navbar-collapse .btn {
-      border-color: black;
-      color: #000;
-      width: auto;
-      height: 40px;
-      background-color: transparent; }
-      header .navbar-collapse .btn-primary {
-        --bs-btn-bg: $color-negro;
-        --bs-btn-hover-bg: $color-negro;
-        --bs-btn-border-color: black;
-        --bs-btn-hover-border-color:black;
-        --bs-btn-active-bg: $color-negro; }
-      header .navbar-collapse .btn-outline-success {
-        --bs-btn-hover-bg: $fondo-transparente;
-        --bs-btn-hover-border-color: black;
-        --bs-btn-hover-color: $color-negro;
-        --bs-btn-active-bg: none; }
 
 .breadcrumb {
   justify-content: center; }
@@ -278,16 +291,6 @@ header {
   .gridcontacto .enviar {
     width: 50px;
     grid-area: enviar; }
-
-.btn-outline-warning {
-  background-color: transparent;
-  --bs-btn-hover-bg:$fondo-transparente;
-  --bs-btn-hover-border-color: black;
-  --bs-btn-color: gray ;
-  --bs-btn-border-color: black ;
-  --bs-btn-active-bg: $fondo-transparente ;
-  --bs-btn-focus-shadow-rgb:$color-negro ;
-  --bs-btn-active-border-color: black; }
 
 .gridfooter {
   width: 100%;
