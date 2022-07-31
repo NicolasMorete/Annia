@@ -107,7 +107,7 @@ main {
                 --bs-btn-hover-border-color: $color-negro ;
             }
         }
-    }
+    } 
     @include flex (row, center, center);
     width: 100%;
     .menues {
@@ -292,5 +292,4 @@ main {
 }
 .articulo {
     margin-bottom: 25px;
-    
 }
