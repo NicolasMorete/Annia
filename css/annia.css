@@ -65,6 +65,8 @@ header {
   margin: auto;
   margin-top: 20px;
   width: 100%; }
+  .contenedormayor .carousel {
+    width: 100%; }
 
 .offcanvas-title {
   width: 300px; }
@@ -120,6 +122,7 @@ main {
     main .articulo_flex_hijo1 .bralette1 {
       width: 100%; }
     main .articulo_flex .articulo_flex_hijo2 .carousel-inner {
+      width: 100%;
       max-width: 530px; }
       main .articulo_flex .articulo_flex_hijo2 .carousel-inner .img_carrousel {
         width: 100%; }
