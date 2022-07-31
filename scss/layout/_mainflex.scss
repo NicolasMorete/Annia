@@ -175,4 +175,121 @@
             }
         }
     }
+    .curvadetalles {
+        img {
+            width: 100%;
+        }
+    }
+}
+.articulo {
+    margin-bottom: 25px;
+    &_flex{
+        width: 100%;
+        gap: 10px; 
+        @include flex (row, center, start);
+        &_hijo1 {
+            .bralette1 {
+                width: 100%;
+            } 
+        }
+        &_hijo2 {
+            .carousel-inner {
+                .img_carrousel {
+                    width: 100%;
+                }
+                max-width: 530px;
+            }
+        }
+        &_hijo3 {
+            @include flex (column, start, start);
+            gap: 30px;
+            .producttitle {
+                font-size: $tamano-grande;
+            }
+            .productprice {
+                font-size: $tamano-mediano;
+            }
+            h2 {
+                font-size: $tamano-mediano;
+            }
+            .description {
+                font-size: $tamano-mediano;
+            }
+            .selec_color {
+                span {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 100%;
+                    display: inline-block;
+                    margin-right: 5px;
+                    cursor: pointer;
+                    background-size: contain;
+                    position: relative;
+                    transition: all 0.4s;
+                }
+                .color_negro {
+                    background-color: black;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_blanco {
+                    background-color: white;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_celeste {
+                    background-color: skyblue;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_beige {
+                    background-color: beige;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_azul {
+                    background-color: blue;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .color_rosa {
+                    background-color: pink;
+                    &:hover {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+            .selec_talle {
+                cursor: pointer;
+                @include flex (row, start, center);
+                gap :15px;
+            }
+            .ideallink {
+                font-size: $tamano-mediano;
+                list-style: none;
+                a {
+                    color: $color-negro;
+                }
+            }
+            .btn {
+                width: fit-content;
+            }
+            .btn-light {
+                --bs-btn-hover-bg: $fondo-transparente ;
+                --bs-btn-active-bg: rgb(226, 180, 220);
+                --bs-btn-hover-border-color: $color-negro ;
+            }
+        }
+    } 
 }

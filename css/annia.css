@@ -249,6 +249,96 @@ header {
         .mainflex .imageneslenceria_grid .selec_color .color_beige:hover {
           width: 25px;
           height: 25px; }
+  .mainflex .curvadetalles img {
+    width: 100%; }
+
+.articulo {
+  margin-bottom: 25px; }
+  .articulo_flex {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start; }
+    .articulo_flex_hijo1 .bralette1 {
+      width: 100%; }
+    .articulo_flex_hijo2 .carousel-inner {
+      max-width: 530px; }
+      .articulo_flex_hijo2 .carousel-inner .img_carrousel {
+        width: 100%; }
+    .articulo_flex_hijo3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      text-align: start;
+      gap: 30px; }
+      .articulo_flex_hijo3 .producttitle {
+        font-size: 20px; }
+      .articulo_flex_hijo3 .productprice {
+        font-size: 15px; }
+      .articulo_flex_hijo3 h2 {
+        font-size: 15px; }
+      .articulo_flex_hijo3 .description {
+        font-size: 15px; }
+      .articulo_flex_hijo3 .selec_color span {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        display: inline-block;
+        margin-right: 5px;
+        cursor: pointer;
+        background-size: contain;
+        position: relative;
+        transition: all 0.4s; }
+      .articulo_flex_hijo3 .selec_color .color_negro {
+        background-color: black; }
+        .articulo_flex_hijo3 .selec_color .color_negro:hover {
+          width: 25px;
+          height: 25px; }
+      .articulo_flex_hijo3 .selec_color .color_blanco {
+        background-color: white; }
+        .articulo_flex_hijo3 .selec_color .color_blanco:hover {
+          width: 25px;
+          height: 25px; }
+      .articulo_flex_hijo3 .selec_color .color_celeste {
+        background-color: skyblue; }
+        .articulo_flex_hijo3 .selec_color .color_celeste:hover {
+          width: 25px;
+          height: 25px; }
+      .articulo_flex_hijo3 .selec_color .color_beige {
+        background-color: beige; }
+        .articulo_flex_hijo3 .selec_color .color_beige:hover {
+          width: 25px;
+          height: 25px; }
+      .articulo_flex_hijo3 .selec_color .color_azul {
+        background-color: blue; }
+        .articulo_flex_hijo3 .selec_color .color_azul:hover {
+          width: 25px;
+          height: 25px; }
+      .articulo_flex_hijo3 .selec_color .color_rosa {
+        background-color: pink; }
+        .articulo_flex_hijo3 .selec_color .color_rosa:hover {
+          width: 25px;
+          height: 25px; }
+      .articulo_flex_hijo3 .selec_talle {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        text-align: center;
+        gap: 15px; }
+      .articulo_flex_hijo3 .ideallink {
+        font-size: 15px;
+        list-style: none; }
+        .articulo_flex_hijo3 .ideallink a {
+          color: #000; }
+      .articulo_flex_hijo3 .btn {
+        width: fit-content; }
+      .articulo_flex_hijo3 .btn-light {
+        --bs-btn-hover-bg: $fondo-transparente ;
+        --bs-btn-active-bg: rgb(226, 180, 220);
+        --bs-btn-hover-border-color: $color-negro ; }
 
 .subti {
   font-size: 1.5rem; }
@@ -386,6 +476,10 @@ header {
       body .mainflex .imageneslenceria_grid:nth-of-type(6) {
         grid-column: 7/12;
         grid-row: 3; }
+  body .articulo_flex {
+    flex-wrap: wrap; }
+    body .articulo_flex_hijo3 {
+      align-items: center; }
   body .gridcontacto {
     display: flex;
     flex-direction: column;
@@ -429,6 +523,11 @@ header {
         width: 100%;
         padding-right: 10px;
         gap: 15px; }
+  body .articulo_flex {
+    flex-wrap: wrap;
+    gap: 5px; }
+    body .articulo_flex_hijo3 {
+      align-items: center; }
   body .gridcontacto {
     display: flex;
     flex-direction: column;
