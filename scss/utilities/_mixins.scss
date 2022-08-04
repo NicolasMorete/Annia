@@ -1,3 +1,4 @@
+//MIXIN QUE INCLUYE DISPLAY FLEX, FLEX DIRECTION, JUSTIFY CONTENT Y TEXT ALIGN QUE SON LAS CONFIGURACIONES MÁS USADAS EN MI SITIO
 @mixin flex ($direction, $justify, $talign) {
     display: flex ;
     flex-direction: $direction ;
