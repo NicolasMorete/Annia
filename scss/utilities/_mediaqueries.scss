@@ -68,8 +68,13 @@
                 }
             }
         }
-        .gridcontacto {
-            @include flex (column, none, none);
+        .maincontacto {
+            .contacto {
+                .gridcontacto {
+                    @include flex (column, none, none);
+                    width: 100%;
+                }
+            }
         }
     }
     .gridfooter {
@@ -135,9 +140,14 @@
                 }
             }
         }
-    .gridcontacto {
-        @include flex (column, none, none);
-    }
+        .maincontacto {
+            .contacto {
+                .gridcontacto {
+                    @include flex (column, none, none);
+                    width: 100%;
+                }
+            }
+        }
     .offcanvas {
         &-header {
             .offcanvas-title {

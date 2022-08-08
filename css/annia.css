@@ -347,47 +347,56 @@ main {
 .articulo {
   margin-bottom: 25px; }
 
-.subti {
-  font-size: 1.5rem; }
-
-.gridcontacto {
-  border: none;
-  display: grid;
-  gap: 20px;
-  justify-content: space-evenly;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 50px);
-  grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
-  .gridcontacto input {
-    background-color: transparent; }
-  .gridcontacto select {
-    background-color: transparent; }
-  .gridcontacto textarea {
-    background-color: transparent; }
-  .gridcontacto .nombre {
-    grid-area: nombre; }
-  .gridcontacto .ingnombre {
-    grid-area: camnom; }
-  .gridcontacto .apellido {
-    grid-area: apelli; }
-  .gridcontacto .ingapellido {
-    grid-area: camape; }
-  .gridcontacto .correo {
-    grid-area: correo; }
-  .gridcontacto .ingcorreo {
-    grid-area: camcor; }
-  .gridcontacto .consu {
-    grid-area: asunto; }
-  .gridcontacto .ingconsu {
-    grid-area: camasu; }
-  .gridcontacto .mensaje {
-    grid-area: mensaje; }
-  .gridcontacto .ingmensaje {
-    grid-area: cammen; }
-  .gridcontacto .enviar {
-    width: 50px;
-    grid-area: enviar; }
+.maincontacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
+  .maincontacto .contacto {
+    width: 100%; }
+    .maincontacto .contacto .subti {
+      font-size: 1.5rem; }
+    .maincontacto .contacto .gridcontacto {
+      border: solid black;
+      display: grid;
+      gap: 20px;
+      justify-content: space-evenly;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(6, 50px);
+      grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
+      .maincontacto .contacto .gridcontacto input {
+        background-color: transparent; }
+      .maincontacto .contacto .gridcontacto select {
+        background-color: transparent; }
+      .maincontacto .contacto .gridcontacto textarea {
+        background-color: transparent; }
+      .maincontacto .contacto .gridcontacto .nombre {
+        grid-area: nombre; }
+      .maincontacto .contacto .gridcontacto .ingnombre {
+        grid-area: camnom; }
+      .maincontacto .contacto .gridcontacto .apellido {
+        grid-area: apelli; }
+      .maincontacto .contacto .gridcontacto .ingapellido {
+        grid-area: camape; }
+      .maincontacto .contacto .gridcontacto .correo {
+        grid-area: correo; }
+      .maincontacto .contacto .gridcontacto .ingcorreo {
+        grid-area: camcor; }
+      .maincontacto .contacto .gridcontacto .consu {
+        grid-area: asunto; }
+      .maincontacto .contacto .gridcontacto .ingconsu {
+        grid-area: camasu; }
+      .maincontacto .contacto .gridcontacto .mensaje {
+        grid-area: mensaje; }
+      .maincontacto .contacto .gridcontacto .ingmensaje {
+        grid-area: cammen; }
+      .maincontacto .contacto .gridcontacto .enviar {
+        width: 50px;
+        grid-area: enviar; }
+  .maincontacto .locales .iframelocal {
+    width: 100%; }
 
 .gridfooter {
   width: 100%;
@@ -487,11 +496,12 @@ main {
     flex-wrap: wrap; }
     body .articulo_flex_hijo3 {
       align-items: center; }
-  body .gridcontacto {
+  body .maincontacto .contacto .gridcontacto {
     display: flex;
     flex-direction: column;
     justify-content: none;
-    text-align: none; }
+    text-align: none;
+    width: 100%; }
   .gridfooter .gridhijo3 .redes {
     flex-direction: column;
     gap: 10px; } }
@@ -535,11 +545,12 @@ main {
     gap: 5px; }
     body .articulo_flex_hijo3 {
       align-items: center; }
-  body .gridcontacto {
+  body .maincontacto .contacto .gridcontacto {
     display: flex;
     flex-direction: column;
     justify-content: none;
-    text-align: none; }
+    text-align: none;
+    width: 100%; }
   body .offcanvas-header .offcanvas-title {
     width: 100%; }
   body .offcanvas-start.show {
