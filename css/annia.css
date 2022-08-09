@@ -365,12 +365,7 @@ main {
       width: 100%;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(6, 50px);
-      grid-template-areas: "nombre asunto"
- "camnom camasu"
- "apelli mensaje"
- "camape cammen"
- "correo cammen"
- "camcor enviar"; }
+      grid-template-areas: "nombre asunto" "camnom camasu" "apelli mensaje" "camape cammen" "correo cammen" "camcor enviar"; }
       .maincontacto .contacto .gridcontacto input {
         background-color: transparent; }
       .maincontacto .contacto .gridcontacto select {
@@ -409,8 +404,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "logo    logo    logo"
- "iframe  redes   info"; }
+  grid-template-areas: "logo    logo    logo" "iframe  redes   info"; }
   .gridfooter .gridhijo1 {
     width: 100%;
     grid-area: logo;
